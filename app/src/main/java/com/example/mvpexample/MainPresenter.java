@@ -3,7 +3,6 @@ package com.example.mvpexample;
 
 public class MainPresenter implements MainContract.Presenter {
 
-    // TODO - Declare model objects and Constructor
     MathModel mathModel;
     MainContract.View mainView;
 
