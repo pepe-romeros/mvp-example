@@ -4,7 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements MainContract.View {
+
+    // TODO define presenter and textview objects
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -13,5 +15,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void doMagic(View view) {
+    }
+
+    @Override
+    public void updateResult(String result) {
+        // TODO - Update the result textview
     }
 }
